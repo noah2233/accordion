@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "Ploni";
+  src: url("../assets/fonts/ploni/ploni-ultralight-aaa.woff") format("woff");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Ploni";
+  src: url("../assets/fonts/ploni/ploni-light-aaa.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Ploni";
+  src: url("../assets/fonts/ploni/ploni-regular-aaa.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Ploni";
+  src: url("../assets/fonts/ploni/ploni-medium-aaa.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Ploni";
+  src: url("../assets/fonts/ploni/ploni-demibold-aaa.woff") format("woff");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Ploni";
+  src: url("../assets/fonts/ploni/ploni-bold-aaa.woff") format("woff");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Ploni";
+  src: url("../assets/fonts/ploni/ploni-black-aaa.woff") format("woff");
+  font-weight: 800;
+}
+
+body {
+  background: #a3e3ff;
+  color: #212121;
+  direction: rtl;
+  text-align: right;
+  font-family: "Ploni";
+  font-size: 17.5px;
+  margin: 2rem 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.custom-accordion {
+  border-radius: 10px;
+  background: #fff;
+  padding: 35px;
+  box-shadow: -1px 0px 12px 0px grey;
+}
+
+.custom-accordion .card {
+  border: none;
+}
+
+.custom-accordion .card .card-header {
+  background-color: #fff;
+  border-radius: none;
+  padding: 0;
+  border: none;
+}
+
+.custom-accordion .card .card-header button.card-header-title {
+  padding: 0;
+  font-weight: bold;
+  color: #212121;
+  display: flex;
+  justify-content: space-between;
+  font-size: 17.5px;
+}
+
+.custom-accordion .card .card-header button.card-header-title:focus,
+.custom-accordion .card .card-header button.card-header-title:hover {
+  text-decoration: none;
+}
+
+.custom-accordion .card .card-header button.card-header-title i.fa.fa-plus {
+  color: #1b5ece;
+}
+
+.custom-accordion .card .collapsing {
+  transition-duration: 0.85s;
+}
+
+.custom-accordion .card .card-body {
+  padding: 0;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion with Bootstrap for Umbraco</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="./style/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- ./style -->
+</head>
+
+<body>
+    <div class="container">
+        <h1>שאלות ותשובות</h1>
+
+        <div class="accordion custom-accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-right card-header-title" type="button"
+                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            <span>איך מזמינים כרטיס CalChoice?</span>
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne">
+                    <div class="card-body">
+                        <p>לוחצים על הכפתור "להזמנת כרטיס", ובמסך "תוכניות
+                            אשראי" (שלב 7) בוחרים ב"תוכנית גמישה".<br>הזכאות לקבלת כרטיס CalChoice נקבעת ע"י Cal במהלך
+                            הזמנת הכרטיס.&nbsp;הכרטיס יגיע אליכם עם שליח.&nbsp;אם תרצו, תוכלו להזמין את הכרטיס דרך נציג
+                            שרות לקוחות. השאירו את פרטיכם ונחזור אליכם.</p>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-right collapsed card-header-title" type="button"
+                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            <span>
+                                מתי אקבל את דף פירוט החיובים כדי לבחור את סכום החיוב החודש?
+                            </span>
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo">
+                    <div class="card-body">
+                        <p><br>אנו שולחים את דף הפירוט בדואר כשבועיים לפני
+                            מועד החיוב. כדי לצפות בדף הפירוט כמה שיותר מוקדם, ניתן לקבל את דף הפירוט ישירות למייל
+                            בהצטרפות לשירות CalMail. ניתן להצטרף לשירות בעת הזמנת כרטיס CalChoice ובכל זמן דרך אתר Cal
+                            ודרך אפליקציית ארנק Cal4U.</p>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-right collapsed card-header-title" type="button"
+                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            <span>
+                                אם לא אודיע לכם כמה לחייב אותי בחודש מסוים, בכמה אחויב?
+                            </span>
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree">
+                    <div class="card-body">
+                        <p><br>כדי לשמור על ניהול חשבון תקין, אנו נחייב את כרטיסך באחת משתי
+                            האפשריות הבאות: 25%&nbsp;מסך העסקות החדשות שביצעת באותו החודש, או 4% מסך כל ההתחייבויות
+                            בכרטיסך (החדשות והקודמות), או 200 <span>₪</span>&nbsp;– הסכום הגבוה מביניהם.</p>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-right collapsed card-header-title" type="button"
+                            data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            <span>
+                                אם לא אודיע לכם כמה לחייב אותי בחודש מסוים, בכמה אחויב?
+                            </span>
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour">
+                    <div class="card-body">
+                        <p><br>כדי לשמור על ניהול חשבון תקין, אנו נחייב את כרטיסך באחת משתי
+                            האפשריות הבאות: 25%&nbsp;מסך העסקות החדשות שביצעת באותו החודש, או 4% מסך כל ההתחייבויות
+                            בכרטיסך (החדשות והקודמות), או 200 <span>₪</span>&nbsp;– הסכום הגבוה מביניהם.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script/jquery.min.js"></script>
+    <script src="./script/bootstrap/bootstrap.min.js"></script>
+    <script src="./script/jquery.min.js"></script>
+</body>
+
+</html>
